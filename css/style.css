@@ -95,6 +95,7 @@ nav ul li{
 /*....*/
 
 
+
 /*contenido*/
 
 .carousel-item active{
@@ -102,28 +103,57 @@ nav ul li{
 }
 
 
-.tarjeta{
+.contenedor{
     width: 350px;
-    height: 600px;
-
-    margin: 30px;
+    height: 20%;
+    margin: 50px;
     padding: 15px;
-    border: 1px solid black;
-    border-radius: 10px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    box-shadow: 0px 6px 22px -8px rgba(38,38,38,0.37);
+    border-radius: 8px;
 }
-.tarjeta img{
-    width: 100%;
-    height: 100%;
+.card-title{
+    display: flex;
+    justify-content: center;
 }
-button{
-    background-color: transparent;
-    border: 1px solid black;
-    padding: 5px 10px;
-    text-align: center;
+
+.card-body p{
+    font-size:  medium;
+    display: flex;
+    justify-content: center;
+}
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+.botones_suma{
+    display: flex;
+    justify-content: center;
+}
+.contenedorProductos{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.botones button , .botones_suma button{
+    border: none;
+    border-radius: 12px;
+    background-color: #bf824f;
+    color: white;
+
+    padding: 5px 20px;
+    margin: 5px;
+}
+
+.cantidad{
+    display: flex;
+    align-items: center;
 }
 
 .franja{
@@ -132,12 +162,7 @@ button{
     display: flex;
     justify-content: space-around;
 }
-.contenedor{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
+
 .texto{
     display: flex;
     margin: 50px;
@@ -153,6 +178,13 @@ button{
     padding: 5%;
 }
 
+.contenedor_pedido{
+    margin: 4% 10%;
+    padding: 2%;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0px 6px 22px -8px rgba(38,38,38,0.37);
+}   
 /*....*/
 
 /*footer*/
