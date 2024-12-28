@@ -16,3 +16,10 @@ El proyecto fue desarrollado utilizando las siguientes tecnologías:
 **Estructura de la página:** HTML
 
 **Estilización y diseño:** CSS
+
+**Logica interactiva:** JavaScript
+
+**Bootstrap 5:** Para un diseño responsivo.
+
+**SweetAlert:** Para notificaciones de compra.
+

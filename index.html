@@ -10,169 +10,102 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Great+Vibes&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Montserrat+Alternates&display=swap" rel="stylesheet">
-
-    <title>Precious jewelry</title>
-    <link rel="icon" href="images/logo (1).ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Coffe shop</title>
+    <link rel="icon" href="images/Cafeteria-removebg-preview.ico">
 </head>
 
 <body>
-
+    
     <header>
-        <nav class="nav-menu">
-            <input type="checkbox" id="check">
-                <label for="check" class="icons">
-                    <i class="fa-solid fa-bars" id="menu-icon"></i>
-                </label>    
-            <div>
-                <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Logo de compañia">
-                </a>
-                <h1 class="great-vibes-regular"><a href="index.html" class="degrade">Precious jewelry</a></h1>
-            </div>
-            <ul>
-                <li><a href="index.html" class="montserrat-alternates-thin">Inicio</a></li>
-                <li><a href="productos.html" class="montserrat-alternates-thin">Productos</a></li>
-                <li><a href="informacion-empresa.html" class="montserrat-alternates-thin">Sobre nosotros</a></li>
-                <li><a href="reseñas.html" class="montserrat-alternates-thin">Reseñas</a></li>
-                <li><a href="contacto.html" class="montserrat-alternates-thin">Contacto</a></li>
-            </ul>
-            <div class="nav-menu">
-                <a href="#" class="carrito-icon"><i class="fa-solid fa-cart-shopping" style="color: #CF7500;"></i></a>
+        <div class="orden">
+            <div class="fondoLogo"><a href="index.html"><img src="images/Cafeteria.png" class="logoImagen" alt="logo"></a></div>
+        </div>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link fs-3" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="productos.html">Cafes artesanales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="informacion-empresa.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="carrito.html" class="carrito-icon"><i class="fa-solid fa-bag-shopping" style="color: #61360d;"></i></a>
             </div>
         </nav>
+        
+
         <script src="https://kit.fontawesome.com/59e94a2c94.js" crossorigin="anonymous"></script>
     
     </header>
     
     <main>
         
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/images-carrousel/pexels-arnold-nagy-195342381-12002672.jpg" class="d-block w-100" alt="...">
+                    <img src="images/images-carrousel/pexels-apgpotr-683039.jpg" class="d-block w-100" style="height: 1000px; object-fit: cover;" alt="Cafeteria">
+                    <div class="carousel-caption">
+                        <h2 class="source-code-pro-" style="font-size: 50px;">Bienvenidos</h2>
+                        <p class="source-code-pro-" style="font-size: large;">Descubre los mejores cafés artesanales</p>
+                    </div>  
                 </div>
                 <div class="carousel-item">
-                    <img src="images/images-carrousel/pexels-leeloothefirst-4544818.jpg" class="d-block w-100" alt="...">
+                    <img src="images/images-carrousel/pexels-chelsey-horne-2961698-4590404.jpg" class="d-block w-100" style="height: 1000px; object-fit: cover;" alt="Bolsa de granos de cafe">
+                    <div class="carousel-caption">
+                        <h2 class="source-code-pro-" style="font-size: 50px;">Calidad Artesanal</h2>
+                        <p class="source-code-pro-" style="font-size: large;">Cada grano cuenta una historia</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/images-carrousel/pexels-saturnus99-177726273.jpg" class="d-block w-100" alt="...">
+                    <img src="images/images-carrousel/pexels-jayoke-851555.jpg" class="d-block w-100" style="height: 1000px; object-fit: cover;" alt="Taza de cafe">
+                    <div class="carousel-caption">
+                        <h2 class="source-code-pro-" style="font-size: 50px;">Sabor Inigualable</h2>
+                        <p class="source-code-pro-" style="font-size: large;">Explora nuestras variedades únicas</p>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <div class="texto">
-            <h3 class="dancing-script-uniquifier">Certificado de Autenticidad y Garantía</h3>
-        </div>
-        <div class="texto">
-            <p class="montserrat-alternates-thin2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid itaque obcaecati animi velit saepe adipisci rem beatae hic, optio minus soluta aspernatur, repellat mollitia delectus quos error iusto nisi aut eaque molestias porro alias odit? Magnam ea ipsum nam culpa voluptatem atque. Modi veritatis eius sunt libero harum dolorem.</p>    
-        </div>
-
-        <div class="great-vibes-regular">
-            <p class="texto">Nuestros favoritos</p>
         </div>
         
-        <section class="contenedor">
-            <div class="tarjeta">
-                <img src="images/images-product/Collar-corrazon rojo.jpg" alt="Collar y pendientes con un corazón rojo" width="200px">
-                <div class="descripcion">
-                    <h3 class="letra">Collar colgante con corazón rojo</h3>
-                    <p class="letra">$30.000</p>
-                    <button type="button" class="montserrat-alternates-thin2">Comprar</button>
-                    <button type="button" class="montserrat-alternates-thin2"><i class="fa-solid fa-cart-shopping" style="color: #CF7500;"></i>Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="tarjeta">
-                <img src="images/images-product/Collar con colgante oval.jpeg" alt="Collar con colgante oval" width="200px">
-                <div class="descripcion">
-                    <h3 class="letra">Collar con colgante oval</h3>
-                    <p class="letra">$30.000</p>
-                    <button type="button" class="montserrat-alternates-thin2">Comprar</button>
-                    <button type="button" class="montserrat-alternates-thin2"><i class="fa-solid fa-cart-shopping" style="color: #CF7500;"></i>Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="tarjeta">
-                <img src="images/images-product/Collarcolgante-piedraceleste.jpeg" alt="Collar colgante con piedra de mar celeste" width="200px">
-                <div class="descripcion">
-                    <h3 class="letra">Collar colgante con piedra de mar</h3>
-                    <p class="letra">$30.000</p>
-                    <button type="button" class="montserrat-alternates-thin2">Comprar</button>
-                    <button type="button" class="montserrat-alternates-thin2"><i class="fa-solid fa-cart-shopping" style="color: #CF7500;"></i>Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="tarjeta">
-                <img src="images/images-product/Conjunto De Joyas De Lujo Para Novias, Collar Y Aretes Con Diseño Floral Y De Gota De Agua Incrustados Con Pedrería .jpeg" alt="Collar enredadera con lágrima azul" width="200px">
-                <div class="descripcion">
-                    <h3 class="letra">Collar enredadera con lágrima azul</h3>
-                    <p class="letra">$30.000</p>
-                    <button type="button" class="montserrat-alternates-thin2">Comprar</button>
-                    <button type="button" class="montserrat-alternates-thin2"><i class="fa-solid fa-cart-shopping" style="color: #CF7500;"></i>Agregar al carrito</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="franja">
-            <div class="great-vibes-regular">   
-                <p class="degrade" >Cuotas sin interes</p>
-            </div>
-            <div class="great-vibes-regular">
-                <p class="degrade">Pago en efectivo</p>
-            </div>
-            <div class="great-vibes-regular">
-                <p class="degrade">Transferencia</p>
-            </div>
-            <div class="great-vibes-regular">
-                <p class="degrade">Devolución gratis</p>
-            </div>
-        </section>
-
-        <section class="contenedor-orden">
-            <div class="montserrat-alternates-thin2">
-                <p>Horario de atención</p>
-                <p>Lunes a viernes: 8:00hs-18:00hs</p>
-                <p>Sabados y feriados: 8:00hs-14:00hs</p>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1689.496158083665!2d-58.38451444388569!3d-34.63451971243615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb39761e2c05%3A0xa977892b68f87d5d!2sParque%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1731708793566!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    
     </main>
 
     <footer>
         
         <div class="contenedor-orden">
-            <div class="montserrat-alternates-thin2">
+            <div>
                 <ul>
                     <li><a href="index.html" class="contenido-footer">Inicio</a></li>
-                    <li><a href="productos.html" class="contenido-footer">Productos</a></li>
+                    <li><a href="productos.html" class="contenido-footer">Cafes artesanales</a></li>
                     <li><a href="informacion-empresa.html" class="contenido-footer">Sobre nosotros</a></li>
                 </ul>
             </div>
     
-            <div class="montserrat-alternates-thin2">
+            <div>
                 <ul>
-                    <li style="color: gray;">Contacto</li>
-                    <li><span style="color: gray;">Correo electronico: </span><a href="mailto:fehab87167@edectus.com?subject=AsuntoUrgente" class="contenido-footer">fehab87167@edectus.com</a></li>
-                    <li><span style="color: gray;">Telefono: </span><a href="#" class="contenido-footer">+54 9 1234567891</a></li>
-                    <li><span style="color: gray;">Dirección: </span><a href="#" class="contenido-footer">San Isidro 123,Ciudad de Buenos Aires</a></li>
+                    <li>Contacto</li>
+                    <li><span>Correo electronico: </span><a href="mailto:fehab87167@edectus.com?subject=AsuntoUrgente" class="contenido-footer">fehab87167@edectus.com</a></li>
+                    <li><span>Telefono: </span><a href="#" class="contenido-footer">+54 9 1234567891</a></li>
+                    <li><span>Dirección: </span><a href="#" class="contenido-footer">San Isidro 123,Ciudad de Buenos Aires</a></li>
                 </ul>
             </div>
             
-            <div class="montserrat-alternates-thin2">
+            <div>
                 <ul>
-                    <li style="color: gray;">Redes sociales</li>
+                    <li>Redes sociales</li>
                     <li><a href="#" class="contenido-footer">Instagram</a></li>
                     <li><a href="#" class="contenido-footer">Twitter</a></li>
                     <li><a href="#" class="contenido-footer">Facebook</a></li>
@@ -180,11 +113,13 @@
             </div>
         </div>
 
-        <p class="copy">Copyright © 2024 TalentoTechTrabajoPreentrega. Todos los derechos reservados.</p>
+        <p class="copy">Copyright © 2024 TalentoTechTrabajoEntrega. Todos los derechos reservados.</p>
     
     </footer>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 <script src="js/scripts.js"></script>
+
 </html>

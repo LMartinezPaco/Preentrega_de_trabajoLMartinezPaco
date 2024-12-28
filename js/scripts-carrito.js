@@ -17,18 +17,18 @@ document.addEventListener("DOMContentLoaded" , () => {
             tablaCafes.className = "cafeCarrito";
 
             tablaCafes.innerHTML = `
-            <td><img src=${cafe.image}></td>
-            <td>${cafe.title}</td>
-            <td>$${cafe.id}</td>
-            <td>
-                    <div>
+            <td class="lista-carrito"><img src=${cafe.image}></td>
+            <td class="lista-carrito">${cafe.title}</td>
+            <td class="lista-carrito">$${cafe.id}</td>
+            <td class="lista-carrito">
+                    <div class="botones-cantidad">
                         <button type="button" class="restarBoton">-</button>
-                        <span>${cafe.cantidad}</span>
+                        <span class="cantidad-producto">${cafe.cantidad}</span>
                         <button type="button" class="sumarBoton">+</button>
                     </div>
             </td>
             <td>$${subtotal.toFixed(2)}</td>
-            <td><i class="fa-solid fa-trash" style="color: #61360d; cursor: pointer;"></i></td>
+            <td class="lista-carrito"><i class="fa-solid fa-trash" style="color: #61360d; font-size: 25px;  cursor: pointer;"></i></td>
         `;
 
             carritoTableBody.appendChild(tablaCafes);
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded" , () => {
 
     // Botón para finalizar compra
     document.getElementById('finalizar-compra').addEventListener('click', () => {
-        alert(`Compra procesada`);
+        swal("Listo!", "Compra procesada", "success");
         localStorage.removeItem('cafeCar');
         setTimeout(() => {
             window.location.href = 'carrito.html';

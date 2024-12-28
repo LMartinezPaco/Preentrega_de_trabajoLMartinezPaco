@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 cardDiv.className = "cafes-container";
 
                 cardDiv.innerHTML = `
-                        <div class="contenedor">
+                        <div class="contenedor quicksand-">
                             <img src="${cafeProducto.image}" class="card-img-top" alt="${cafeProducto.title}">
                             <div class="card-body">
                                 <h5 class="card-title">${cafeProducto.title}</h5>
@@ -59,9 +59,11 @@ document.addEventListener("DOMContentLoaded",()=>{
                     botonAgregar.addEventListener("click",() => {
                         if(numero>0){
                             agregarAlCarrito(cafeProducto,numero);
+                            numero = 0; 
+                            actualizarNumero();
                         }
                         else{
-                            alert("Seleccione al menos un cafe para el pedido, por favor");
+                            swal("Seleccione al menos un cafe para el pedido, por favor", "", "error");
                         }
                     });
                     
@@ -86,7 +88,8 @@ document.addEventListener("DOMContentLoaded",()=>{
         }
 
         localStorage.setItem("cafeCar",JSON.stringify(cafeCar));
-        alert(`Un ${cafeProducto.title} ha sido agregrado a tu pedido!`);
+        swal(`${numero} ${cafeProducto.title}`, "ha sido agregrado a tu pedido!");
+
     }
     fetchCafes();
 
